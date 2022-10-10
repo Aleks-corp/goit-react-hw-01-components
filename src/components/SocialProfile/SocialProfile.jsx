@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import { SocialDesc } from './SocialDesc/SocialDesc';
 import { SocialStats } from './SocialStats/SocialStats';
-import { Title, Container } from './SocialProfile.styled';
+import { Container } from './SocialProfile.styled';
+import { Section, MainTitle } from 'components/module/common.styled';
 
 export const SocialProfile = ({
   profile: { username, tag, location, avatar, stats },
 }) => {
   return (
-    <>
-      <Title>1st task - Social Profile</Title>
+    <Section>
+      <MainTitle>1st task - Social Profile</MainTitle>
       <Container>
         <SocialDesc
           username={username}
@@ -18,7 +19,7 @@ export const SocialProfile = ({
         />
         <SocialStats stats={stats} />
       </Container>
-    </>
+    </Section>
   );
 };
 
