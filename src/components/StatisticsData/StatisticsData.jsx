@@ -6,12 +6,12 @@ import {
   StatisticsItem,
   StatisticsList,
 } from './StatisticsData.styled';
-import { Section, MainTitle } from 'components/module/common.styled';
+import { Section, MainTitle } from 'modules/common.styled';
 
 export const StatisticsData = ({ title, data }) => {
   return (
     <Section>
-      <MainTitle>2nt task - Social Profile</MainTitle>
+      <MainTitle>2nd task - Social Profile</MainTitle>
       <Container>
         {title && <Title>{title}</Title>}
         <StatisticsList>

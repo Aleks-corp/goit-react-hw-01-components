@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { SocialDesc } from './SocialDesc/SocialDesc';
 import { SocialStats } from './SocialStats/SocialStats';
 import { Container } from './SocialProfile.styled';
-import { Section, MainTitle } from 'components/module/common.styled';
+import { Section, MainTitle } from 'modules/common.styled';
 
 export const SocialProfile = ({
   profile: { username, tag, location, avatar, stats },

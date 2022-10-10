@@ -1,9 +1,9 @@
-import profile from '../user.json';
+import profile from 'modules/user.json';
 import { SocialProfile } from './SocialProfile/SocialProfile';
-import data from '../data.json';
+import data from 'modules/data.json';
 import { StatisticsData } from './StatisticsData/StatisticsData';
-// import friends from '../friends.json';
-// import { FriendList } from './FriendList/FriendList';
+import friends from 'modules/friends.json';
+import { FriendList } from './FriendList/FriendList';
 
 import { Header, Container } from './App.styled';
 
@@ -16,7 +16,7 @@ export const App = () => {
 
       <StatisticsData title="Upload stats" data={data} />
 
-      {/* <FriendList profile={friends} /> */}
+      <FriendList friends={friends} />
     </Container>
   );
 };
