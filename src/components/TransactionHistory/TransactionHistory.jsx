@@ -6,7 +6,7 @@ import { TransactionHistoryItem } from './TransactionHistoryItem';
 export const TransactionHistory = ({ items }) => {
   return (
     <Section>
-      <MainTitle>4rd task - Social Profile</MainTitle>
+      <MainTitle>4th task - Social Profile</MainTitle>
 
       <Table>
         <thead>
