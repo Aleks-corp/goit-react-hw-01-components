@@ -1,16 +1,25 @@
+import profile from '../user.json';
+import { SocialProfile } from './SocialProfile/SocialProfile';
+// import data from '../data.json';
+// import { StatisticsData } from './StatisticsData/StatisticsData';
+// import friends from '../friends.json';
+// import { FriendList } from './FriendList/FriendList';
+
+import { Header, Container } from './App.styled';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      React homework template 4
-    </div>
+    <Container>
+      <Header>React homework 1</Header>
+
+      <SocialProfile profile={profile} />
+
+      {/* <>
+        <StatisticsData profile={data} />
+      </>
+      <>
+        <FriendList profile={friends} />
+      </> */}
+    </Container>
   );
 };
