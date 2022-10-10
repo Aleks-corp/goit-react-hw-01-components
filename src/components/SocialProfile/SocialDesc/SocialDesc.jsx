@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types';
 import {
-  CardWrapper,
+  DeskWrapper,
   AvatarImg,
   UserName,
   Tag,
   Location,
-} from './SocialCard.styled';
-export const SocialCard = ({ username, tag, location, avatar }) => {
+} from './SocialDesc.styled';
+export const SocialDesc = ({ username, tag, location, avatar }) => {
   return (
-    <CardWrapper>
+    <DeskWrapper>
       <AvatarImg src={avatar} alt={username} />
       <UserName>{username}</UserName>
       <Tag>@{tag}</Tag>
       <Location>{location}</Location>
-    </CardWrapper>
+    </DeskWrapper>
   );
 };
 
-SocialCard.propTypes = {
+SocialDesc.propTypes = {
   username: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,

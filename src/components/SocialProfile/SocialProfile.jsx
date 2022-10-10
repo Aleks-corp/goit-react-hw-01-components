@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { SocialCard } from './SocialCard/SocialCard';
-import { SocialAnalitic } from './SocialAnalitic/SocialAnalitic';
+import { SocialDesc } from './SocialDesc/SocialDesc';
+import { SocialStats } from './SocialStats/SocialStats';
 import { Title, Container } from './SocialProfile.styled';
 
 export const SocialProfile = ({
@@ -10,13 +10,13 @@ export const SocialProfile = ({
     <>
       <Title>1st task - Social Profile</Title>
       <Container>
-        <SocialCard
+        <SocialDesc
           username={username}
           tag={tag}
           location={location}
           avatar={avatar}
         />
-        <SocialAnalitic stats={stats} />
+        <SocialStats stats={stats} />
       </Container>
     </>
   );

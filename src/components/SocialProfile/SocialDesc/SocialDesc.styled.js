@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardWrapper = styled.div`
+export const DeskWrapper = styled.div`
   padding: 40px;
 `;
 export const AvatarImg = styled.img`
